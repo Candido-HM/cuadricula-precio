@@ -1,0 +1,220 @@
+@font-face {
+    font-family: "Karla";
+    src: url("/fonts/Karla/Inter-VariableFont_slnt\,wght.ttf");
+    font-weight: normal;
+    font-style: normal;
+}
+body{
+    background-color: #E6EFF6;
+}
+
+.container {
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container .card {
+    display: block;
+    width: 45%;
+    height: 68%;
+    background-color: transparent;
+    overflow: hidden;
+}
+
+div .cont1{
+    display: block;
+    width: 99.9%;
+    height: 45%;
+    background-color: #FFFFFF;
+    box-shadow: inset 0px 0px 0px 1px #E4ECEF, inset 1px 1px 1px 1px #FCFFFF, inset 2px 2px 2px 1px #FEFFFF, inset 2px 2px 2px 1px #FFFFFD;    
+    border: 1px solid #D5E1E9;
+    border-radius: 15px 15px 0px 0px;
+    animation: cont1 1250ms linear;
+}
+
+/*Animacion*/
+@keyframes cont1 {
+    from{
+        transform: translateY(-600%) scale(1,1);
+    }
+    to{ 
+        transform: translateY(0%) scale(1,1);
+    }
+}
+
+.sub-card {
+    display: block;
+    width: 100%;
+    height: 55%;
+    flex-direction: row;
+    overflow: hidden;
+}
+
+.sub-card .cont2 {
+    width: 49.6%;
+    height: 100%;
+    background-color: #2BB3B1;
+    float: left;
+    border-radius: 0px 0px 0px 15px;
+    border: 1px solid #29B9B9;
+    animation: cont2 1250ms linear;
+}
+
+/*Animacion*/
+@keyframes cont2 {
+    from{
+        transform: translateX(-600%) scale(1,1);
+    }
+    to{ 
+        transform: translateX(0%) scale(1,1);
+    }
+}
+
+
+
+.sub-card .cont3 {
+    width: 49.7%;
+    height: 100%;
+    background-color: #4ABEBD;
+    float: right;
+    border-radius: 0px 0px 15px 0px;
+    border: 1px solid #4CB5B3;
+    animation: cont3 1250ms linear;
+}
+
+/*Animacion*/
+@keyframes cont3 {
+    from{
+        transform: translateX(600%) scale(1,1);
+    }
+    to{ 
+        transform: translateX(0%) scale(1,1);
+    }
+}
+
+
+.h3-cont1 {
+    font-family: Karla;
+    width: 450px;
+    height: 28px;
+    margin-top: 40px;
+    margin-left: 35px;
+    font-size: 20px;
+    color: #35A9A7;
+}
+
+.cont1 > h4 {
+    width: 450px;
+    height: 23px;
+    font-size: 15px;
+    font-family: Karla;
+    color: #C2D952;
+    margin-left: 35px;
+}
+
+p {
+    width: 450px;
+    height: 35px;
+    margin-left: 35px;
+    color: #ADB1B4;
+    font-size: 15px;
+}
+
+/*Cont 2*/
+.cont2 .h3-cont2 {
+    margin-top: 30px;
+    margin-left: 30px;
+    width: 220px;
+    height: 20px;
+    font-family: Karla;
+    font-size: 16px;
+    color: #EBFFFF;
+}
+
+.cont2 .precio{
+    width: 250px;
+    height: 35px;
+    font-family: Karla;
+    margin-top: 10px;
+    margin-left: 30px;
+}
+
+.precio .dolar{
+    width: 25%;
+    height: 100%;
+    font-size: 25px;
+    font-weight: bold;
+    color: white;
+    float: left;
+}
+
+.precio .month {
+    width: 60%;
+    height: 100%;
+    color: #61CDCD;
+    margin-top: 5px;
+    justify-content: center;
+    float: left;
+}
+
+.cont2 > p {
+    width: 250px;
+    height: 20px;
+    margin-top: 10px;
+    margin-left: 30px;
+    font-size: 16px;
+    color: #B3FFFF;
+}
+
+.cont2 input[type="submit"] {
+    width: 220px;
+    height: 50px;
+    margin-left: 30px;
+    background-color: #BEE032;
+    border-radius: 10px;
+    border: 1px solid #239571;
+    box-shadow: inset 0px 0px 0px 1px #89CF5F,
+                inset 0px 1px 2px 5px #B4E148;
+    color: white;
+    font-family: Karla;
+    font-size: 20px;
+    transition: all 500ms;
+}
+
+.cont2 input[type="submit"]:hover {
+    background-color: #acd40a;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+/*Cont 3*/
+.cont3 .h3-cont3{
+    width: 250px;
+    height: 20px;
+    margin-top: 30px;
+    margin-left: 30px;
+    font-size: 16px;
+    font-family: Karla;
+    color: #F5FFFF;
+    letter-spacing: 1px;
+}
+
+.cont3 p{
+    width: 250px;
+    height: 15px;
+    margin-left: 30px;
+    margin-bottom: -12px;
+    font-family: Karla;
+    font-size: 14px;
+    color: #aeebea;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+}
